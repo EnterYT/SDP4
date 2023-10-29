@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
-public abstract class Person {
-    Scanner sc = new Scanner(System.in);
+public class Person {
+    private Scanner sc = new Scanner(System.in);
     protected String name;
     int age;
     Person(String name){
@@ -11,12 +11,8 @@ public abstract class Person {
         this.name = name;
         this.age = age;
     }
-
     protected void communicate(String text){
         System.out.println("Talking...");
-    }
-    protected void searchBook(Book book){
-        System.out.printf((book.isBookAvailable(book)) ? "This Book is now available" : "This Book is unavailable now");
     }
     public void addComment(Book book, String comment){
         book.comments.add(comment);

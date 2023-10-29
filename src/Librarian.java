@@ -8,5 +8,10 @@ public class Librarian extends Person{
     Librarian(String name, int age){
         super(name, age);
     }
-
+    public void checkBookAvailable(Book book){
+        System.out.printf((book.isBookAvailable(book)) ? "This Book is now available" : "This Book is unavailable now");
+    }
+    public void cleanLibrary(){
+        System.out.println("Library cleaned...");
+    }
 }
