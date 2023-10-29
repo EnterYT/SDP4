@@ -13,4 +13,7 @@ public abstract class Person {
     protected void communicate(String text){
         System.out.println("Talking...");
     }
+    protected void searchBook(Book book){
+        System.out.printf((book.isBookAvailable(book)) ? "This Book is now available" : "This Book is unavailable now");
+    }
 }
