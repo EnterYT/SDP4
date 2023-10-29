@@ -1,5 +1,12 @@
+import java.util.ArrayList;
+
 public class SciFi extends Book{
-    SciFi(String name, String author) {
-        super(name, author);
+    protected String genreName = "SciFi";
+
+    SciFi(String name, String authorName, String authorSurname) {
+        super(name, authorName, authorSurname);
+    }
+    SciFi(String name, String authorName){
+        super(name, authorName);
     }
 }
