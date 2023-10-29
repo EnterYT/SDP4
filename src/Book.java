@@ -20,7 +20,4 @@ public class Book {
     public boolean isBookAvailable(Book book){
         return book.available;
     }
-    public String showReview(){
-        return review;
-    }
 }
